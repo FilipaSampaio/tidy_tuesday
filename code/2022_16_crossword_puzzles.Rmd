@@ -1,0 +1,23 @@
+---
+title: "Crossword Puzzles and Clues"
+author: "Filipa Sampaio"
+date: "27/04/2022"
+output: html_document
+---
+
+```{r prep, message=FALSE, warning=FALSE}
+## packages
+library(tidyverse)
+library(here)
+```
+
+# Load the data
+
+<https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-04-19/readme.md>
+
+Dowload the data and make available in the `tt` object.
+
+```{r}
+raw_df <- read_csv("https://cryptics.georgeho.org/data/clues.csv?_stream=on&source=bigdave44&_size=max")
+
+```
